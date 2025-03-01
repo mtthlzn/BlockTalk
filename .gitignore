@@ -1,0 +1,14 @@
+# Node.js (frontend)
+frontend/node_modules/
+frontend/.turbo/
+frontend/.solid/
+frontend/dist/
+
+# Rust (backend)
+backend/target/
+backend/Cargo.lock
+
+# OS / IDE files
+.DS_Store
+Thumbs.db
+.vscode/
