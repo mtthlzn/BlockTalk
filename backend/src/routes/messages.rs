@@ -22,7 +22,12 @@ async fn send_message(
     let mut messages = state.messages.lock().unwrap();
     messages.push(payload.clone());
 
-    Json(json!({ "status": "success", "message": "Message ajouté", "data": payload }))
+    Json(json!({
+        "status": "success",
+        "message": String::from("Message ajouté"), 
+        "data": payload
+    }))
+
 }
 
 // Récupérer tous les messages
